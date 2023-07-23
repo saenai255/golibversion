@@ -86,9 +86,3 @@ func init() {
 		return int(C.invoke_fn_4_args(versionCompare4Handle, C.CString(lhsVersion), C.CString(rhsVersion), C.int(lhsFlags), C.int(rhsFlags)))
 	}
 }
-
-func main() {
-	println(Compare("1.0.0", "1.0.0"))
-	println(Compare("1.0.0", "1.0.1"))
-	println(Compare("1.0.0", "1.0.0-rc1"))
-}
