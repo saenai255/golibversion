@@ -1,4 +1,4 @@
-package main
+package libversion
 
 /*
 #cgo LDFLAGS: -ldl

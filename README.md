@@ -39,7 +39,7 @@ version1 := "1.2.3"
 version2 := "1.3.0"
 
 // Compare versions
-result := golibversion.Compare(version1, version2)
+result := libversion.Compare(version1, version2)
 if result == -1 {
     fmt.Printf("%s is older than %s\n", version1, version2)
 } else if result == 1 {
